@@ -26,7 +26,7 @@ export class CalculatorFormComponent implements OnInit {
   profit: any
   daysLeft: any
   investiment: any
-  res7days: any
+  day: any
   res15days: any
   month: any
 
@@ -71,10 +71,10 @@ export class CalculatorFormComponent implements OnInit {
     this.investiment
     this.price
 
-    this.daysLeft = (this.investiment / this.profit).toFixed(0)
+    this.day = (this.profit * this.price)
+    this.daysLeft = (this.investiment / this.day ).toFixed(0)
     console.log(this.daysLeft)
-    this.res7days = ((this.profit * 7) * this.price)
-    console.log(this.res7days)
+    console.log(this.day)
     this.res15days = (this.profit * 15) * this.price
     console.log(this.res15days)
     this.month = (this.profit * 30) * this.price

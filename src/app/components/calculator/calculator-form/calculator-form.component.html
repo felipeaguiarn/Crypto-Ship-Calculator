@@ -1,7 +1,7 @@
 <form class="mb-1" [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="row">
     <div class="col">
-      <label class="form-label">Investiment</label>
+      <label class="form-label">Investment</label>
       <input
         type="text"
         class="form-control"
@@ -19,7 +19,7 @@
       />
     </div>
     <div class="col">
-      <label class="form-label">Days Left</label>
+      <label class="form-label">Days/Payback</label>
       <input
         type="text"
         class="form-control"
@@ -31,13 +31,13 @@
   </div>
   <div class="row">
     <div class="col">
-      <label class="form-label">7 Days</label>
+      <label class="form-label">Day</label>
       <input
         type="text"
         class="form-control"
         disabled
         name="7days"
-        placeholder="{{res7days}} $"
+        placeholder="{{day}} $"
       />
     </div>
     <div class="col">
