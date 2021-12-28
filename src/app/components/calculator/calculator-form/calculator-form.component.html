@@ -1,0 +1,80 @@
+<form class="mb-1" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col">
+      <label class="form-label">Investiment</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="investiment"
+        placeholder="500 $"
+      />
+    </div>
+    <div class="col">
+      <label class="form-label">Daily Profit</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="profit"
+        placeholder="10 CSHIPS"
+      />
+    </div>
+    <div class="col">
+      <label class="form-label">Days Left</label>
+      <input
+        type="text"
+        class="form-control"
+        name="left"
+        disabled
+        placeholder="{{daysLeft}} Days"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label class="form-label">7 Days</label>
+      <input
+        type="text"
+        class="form-control"
+        disabled
+        name="7days"
+        placeholder="{{res7days}} $"
+      />
+    </div>
+    <div class="col">
+      <label class="form-label">15 Days</label>
+      <input
+        type="text"
+        class="form-control"
+        disabled
+        name="15days"
+        placeholder="{{res15days}} $"
+      />
+    </div>
+    <div class="col">
+      <label class="form-label">Month</label>
+      <input
+        type="text"
+        class="form-control"
+        disabled
+        name="month"
+        placeholder="{{month}} $"
+      />
+    </div>
+  </div>
+  <div class="mb-4 mt-4">
+    <div class="col-sm mb-4 mt-4 mb-sm-0"></div>
+  </div>
+
+  <div class="d-grid text-center mb-4">
+    <button type="submit" class="btn btn-primary btn-lg">
+      Calculate
+    </button>
+    <!-- <span class="form-text">
+      Need help?
+      <a class="link" href="./page-help-center.html">
+        Visit our Help Center
+        <i class="bi-chevron-right small ms-1"></i>
+      </a>
+    </span> -->
+  </div>
+</form>

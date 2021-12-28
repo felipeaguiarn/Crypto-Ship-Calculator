@@ -1,0 +1,30 @@
+<header class="masthead">
+  <div class="container position-relative">
+    <div class="row d-flex justify-content-center">
+      <div class="col-xl-6 mt-5">
+        <div class="text-left text-white">
+          <!-- Page heading-->
+          <h1 class="mt-2">Welcome Captain</h1>
+          <h3>
+            This site was created to help you with information about Crypto
+            Ships game. It's not official, visit the original project at:
+          </h3>
+          <a
+            class="text-center text-white"
+            target="_blank"
+            href="https://cryptoships.club/"
+            ><h4>Crypto Ships</h4></a
+          >
+          <div class="mt-5 d-flex justify-content-center">
+            <span class="cardRed text-white">
+              <span>{{ symbol }}</span> - <span>${{ price }}  </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card col-lg-4 mt-5">
+        <app-card-ship></app-card-ship>
+      </div>
+    </div>
+  </div>
+</header>

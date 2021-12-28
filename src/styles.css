@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.cardRed {
+  background: #fc6762;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  font-size: 1.5rem;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 0 0 5px #fff, 5px 5px 0 5px rgb(0 0 0 / 10%);
+  min-width: 200px;
+  max-width: 415px;
+  min-height: 50px;
+  max-height: 69px;
+}
