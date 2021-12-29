@@ -1,3 +1,22 @@
 .ajustefino{
   padding-top: 200px;
 }
+
+.card-form{
+  background-color: #e8e8e8;
+  position: relative;
+  background-image: url(../../../assets/img/banner-form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  border-radius: 6px;
+  border: #fff solid;
+}
+.card-form:before {
+
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+}
+

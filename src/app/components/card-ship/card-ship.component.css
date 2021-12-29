@@ -1,0 +1,20 @@
+.card-ship{
+  background-color: #e8e8e8;
+    background-image: url(../../../assets/img/ship-card-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 0 0 5px #fff, 5px 5px 0 5px rgb(0 0 0 / 10%);
+}
+
+.text-color{
+  color:#53638b;
+  text-transform: uppercase;
+}
+
