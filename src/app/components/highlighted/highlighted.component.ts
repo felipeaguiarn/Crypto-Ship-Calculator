@@ -10,6 +10,7 @@ export class HighlightedComponent implements OnInit {
 
   price: any
   symbol: any
+  priceInit: any
 
   constructor(private priceNowService: PriceNowService) { }
 
@@ -27,6 +28,8 @@ export class HighlightedComponent implements OnInit {
     if (this.price.length > 4) {
       this.price = this.price.slice(0, 6);
     }
+
+    this.priceInit = this.price * 510
 
   }
 

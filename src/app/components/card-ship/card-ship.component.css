@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 290px;
-    height: 500px;
+    max-height: 500px;
     margin: 0 auto;
     position: relative;
     border-radius: 6px;
@@ -18,3 +18,24 @@
   text-transform: uppercase;
 }
 
+.card__rarity {
+  width: 200px;
+  margin: auto;
+  display: flex;
+  grid-gap: 5px;
+}
+
+.box-rarity__3 {
+  border: 2px solid #53638b;
+}
+
+.box-rarity-fill__3 {
+  background-color: #53638b !important;
+}
+
+.box-rarity {
+  height: 21px;
+  width: 38px;
+  background-color: transparent;
+  border-radius: 6px;
+}

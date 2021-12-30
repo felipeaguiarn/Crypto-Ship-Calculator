@@ -1,16 +1,22 @@
-  <div class="card-ship">
-    <div class="text-color">
-      <h5 class="text-center mt-2">
-        Today's Featured Ship
-      </h5>
-      <div class="text-center">
-        <img src="assets/img/Uncommon - Glory.png" alt="Ship-Glory" />
-      </div>
-      <ul class="mt-2 list-unstyled text-center">
-        <li class="mb-1">
-          <h6><span>Glory</span> - Rare</h6>
-        </li>
-        <li class="p-2 d-flex justify-content-between text-sm">
+<div class="card-ship">
+  <div class="text-color">
+    <h5 class="text-center mt-2 mb-2">Today's Featured Ship</h5>
+    <div class="text-center">
+      <img src="{{ img }}" alt="Ship-Glory" />
+    </div>
+    <ul class="mt-2 list-unstyled text-center">
+      <li class="mb-1">
+        <h6>
+          <span>{{ name }}</span> - {{ rarity }}
+        </h6>
+      </li>
+      <li>
+        <p><span>Races Per Day: </span> {{ races }}</p>
+      </li>
+      <li>
+        <p><span> Avarege: </span> {{ avarege }} CSHIPS</p>
+      </li>
+      <!-- <li class="p-2 d-flex justify-content-between text-sm">
           POWER 157
           <span>
             <progress value="157" max="200"></progress>
@@ -33,11 +39,17 @@
           <span>
             <progress value="60" max="100"></progress>
           </span>
-        </li>
-      </ul>
-      <div class="d-flex justify-content-center">
-        <button type="button" class="buttonBsc">Refresh</button>
-      </div>
+        </li> -->
+    </ul>
+    <!-- <div class="card__rarity mb-2">
+      <div class="box-rarity box-rarity__3 box-rarity-fill__3"></div>
+      <div class="box-rarity box-rarity__3 box-rarity-fill__3"></div>
+      <div class="box-rarity box-rarity__3 box-rarity-fill__3"></div>
+      <div class="box-rarity box-rarity__3 "></div>
+      <div class="box-rarity box-rarity__3 "></div>
+    </div> -->
+    <div class="d-flex justify-content-center mb-2">
+      <button type="button" (click)="ngOnInit()" class="buttonBsc">Refresh</button>
     </div>
   </div>
-
+</div>
