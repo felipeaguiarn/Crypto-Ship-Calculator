@@ -31,6 +31,10 @@ export class HighlightedComponent implements OnInit {
 
     this.priceInit = this.price * 510
 
+    if (this.priceInit.length > 4) {
+      this.priceInit = this.priceInit.slice(0, 5);
+    }
+
   }
 
 }
