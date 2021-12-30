@@ -16,22 +16,22 @@ export class CardShipComponent implements OnInit {
   constructor(private shipDatabaseService: ShipDatabaseService) { }
 
   ngOnInit(): void {
-    // this.Apidata()
+    this.Apidata()
     this.num = this.numberIndex()
   }
 
-  // Apidata() {
-  //   this.shipDatabaseService.getShips().subscribe((resp) => this.success(resp))
-  // }
-  // success(resp: any): void {
-  //   this.name = resp[this.num].name
-  //   this.rarity = resp[this.num].rarity
-  //   this.img = resp[this.num].img
-  //   this.races = resp[this.num].races
-  //   this.avarege = resp[this.num].avarege
+  Apidata() {
+    this.shipDatabaseService.getShips().subscribe((resp) => this.success(resp))
+  }
+  success(resp: any): void {
+    this.name = resp.ships[this.num].name
+    this.rarity = resp.ships[this.num].rarity
+    this.img = resp.ships[this.num].img
+    this.races = resp.ships[this.num].races
+    this.avarege = resp.ships[this.num].avarege
 
-  //   //console.log(resp[this.num])
-  // }
+    console.log(resp.ships[this.num])
+  }
 
   numberIndex() {
     return Math.floor(Math.random() * 52);

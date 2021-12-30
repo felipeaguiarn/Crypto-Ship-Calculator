@@ -1,20 +1,20 @@
 <div class="card-ship">
   <div class="text-color">
-    <h5 class="text-center mt-2 mb-2">Today's Featured Ship</h5>
+    <h5 class="text-center mt-2 mb-2">Featured Ship</h5>
     <div class="text-center">
-      <img src="https://docs.cryptoships.club/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FU29wH43QXFaZ9EA1NQhA%2Fuploads%2F0lYV4swYzetVzPPP9SfA%2FEpic%20-%20Massachusetts.png?alt=media&token=624687e3-bb69-47dc-9cf1-960f8d72e8ca" alt="Ship-Glory" />
+      <img src={{img}} alt="Ship-Day" />
     </div>
     <ul class="mt-2 list-unstyled text-center">
       <li class="mb-1">
         <h6>
-          <span>{{ name }}Massachusetts</span> - Epic{{ rarity }}
+          <span>{{ name }}</span> - {{ rarity }}
         </h6>
       </li>
       <li>
-        <p><span>Races Per Day: </span> 5{{ races }}</p>
+        <p><span>Races Per Day: </span> {{ races }}</p>
       </li>
       <li>
-        <p><span> Avarege: </span> 26{{ avarege }} CSHIPS</p>
+        <p><span> Avarege: </span> {{ avarege }} CSHIPS</p>
       </li>
       <!-- <li class="p-2 d-flex justify-content-between text-sm">
           POWER 157
@@ -48,8 +48,8 @@
       <div class="box-rarity box-rarity__3 "></div>
       <div class="box-rarity box-rarity__3 "></div>
     </div> -->
-    <div class="d-flex justify-content-center mb-2">
+    <!-- <div class="d-flex justify-content-center mb-2">
       <button type="button" (click)="ngOnInit()" class="buttonBsc">Refresh</button>
-    </div>
+    </div> -->
   </div>
 </div>
