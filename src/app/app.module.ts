@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CalculatorFormComponent } from './components/calculator/calculator-form/calculator-form.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { OpenBoxComponent } from './components/open-box/open-box.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { OpenBoxComponent } from './components/open-box/open-box.component';
     CardShipComponent,
     CalculatorFormComponent,
     CalculatorComponent,
-    OpenBoxComponent
+    OpenBoxComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

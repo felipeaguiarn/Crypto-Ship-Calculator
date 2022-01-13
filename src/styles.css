@@ -32,3 +32,8 @@
   border-radius: 6px;
   border: #fff solid;
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+}
