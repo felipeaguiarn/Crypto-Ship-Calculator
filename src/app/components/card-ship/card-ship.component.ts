@@ -13,6 +13,7 @@ export class CardShipComponent implements OnInit {
   races: any
   avarege: any
   num: any;
+  requests: any
   constructor(private shipDatabaseService: ShipDatabaseService) { }
 
   ngOnInit(): void {
@@ -30,7 +31,6 @@ export class CardShipComponent implements OnInit {
     this.races = resp.ships[this.num].races
     this.avarege = resp.ships[this.num].avarege
 
-    console.log(resp.ships[this.num])
   }
 
   numberIndex() {

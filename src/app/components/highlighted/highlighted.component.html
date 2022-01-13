@@ -5,10 +5,10 @@
         <div class="text-left text-white">
           <!-- Page heading-->
           <h1 class="mt-2">Welcome Captain</h1>
-          <h3>
+          <h5>
             This site was created to help you with information about Crypto
             Ships game. It's not official, visit the original project at:
-          </h3>
+          </h5>
           <a
             class="text-center text-white"
             target="_blank"
@@ -17,18 +17,21 @@
           >
           <div class="mt-5 d-flex justify-content-center">
             <span class="cardRed text-white">
-              <span>{{ symbol }}</span> - <span>${{ price }}  </span>
+              <span>{{ symbol }}</span> - <span>${{ price }} </span>
             </span>
           </div>
-
         </div>
       </div>
       <div class="col-lg-6 mt-5">
-        <app-card-ship></app-card-ship>
+        <app-calculator></app-calculator>
       </div>
-      <div class="mt-5 text-center text-light">
-        <p>To start the game you need 500 CSHIPS + 10 CSHIPS of fuel, this is a estimate.</p>
-        <p>In the current quotation, this value would be approximately: $ <span class="fw-bold">{{priceInit}}</span> </p>
+      <div class="card w-50 bg-dark bg-opacity-25 border border-3 border-white">
+        <div class="card-body text-light">
+          <h5 class="card-title text-center">Minimum initial investment</h5>
+          <p class="card-text">
+            To start the game you need 500 CSHIPS + 10 CSHIPS of fuel, this is a estimate.</p>
+          <p>In the current quotation, this value would be approximately: $ <span class="fw-bold">{{priceInit}}</span> </p>
+        </div>
       </div>
     </div>
   </div>

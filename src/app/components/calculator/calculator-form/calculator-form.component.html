@@ -1,6 +1,11 @@
-  <form class=" text-bold  text-uppercase text-center mt-1" [formGroup]="form" (ngSubmit)="onSubmit()">
-    <div class="row ">
-      <div class="col">
+<form
+  class="text-bold text-uppercase text-center mt-1"
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="col">
+    <div class="row">
+      <div class="col-6">
         <label class="form-label bg-light">Investment in Dolar</label>
         <input
           type="text"
@@ -9,8 +14,9 @@
           placeholder="500 $"
         />
       </div>
-      <div class="col">
-        <label class="form-label bg-light">Daily Profit in CSHIPS</label>
+      <div class="col-6">
+        <label class="form-label bg-light" tabindex="0" data-bs-toggle="tooltip"
+        title="Average is 20">Daily Profit in CSHIPS</label>
         <input
           type="text"
           class="form-control"
@@ -18,8 +24,10 @@
           placeholder="10 CSHIPS"
         />
       </div>
+    </div>
+    <div class="row">
       <div class="col">
-        <label class="form-label bg-light">Days/Payback</label>
+        <label class="form-label bg-light mt-1">Days/Payback</label>
         <input
           type="text"
           class="form-control"
@@ -28,10 +36,8 @@
           placeholder="{{ daysLeft }} Days"
         />
       </div>
-    </div>
-    <div class="row">
       <div class="col">
-        <label class="form-label bg-light">Per Day</label>
+        <label class="form-label bg-light mt-1">Per Day</label>
         <input
           type="text"
           class="form-control"
@@ -40,8 +46,10 @@
           placeholder="{{ day }} $"
         />
       </div>
+    </div>
+    <div class="row">
       <div class="col">
-        <label class="form-label bg-light">15 Days</label>
+        <label class="form-label bg-light mt-1">15 Days</label>
         <input
           type="text"
           class="form-control"
@@ -51,7 +59,7 @@
         />
       </div>
       <div class="col">
-        <label class="form-label bg-light">Month</label>
+        <label class="form-label bg-light mt-1">Month</label>
         <input
           type="text"
           class="form-control"
@@ -61,19 +69,19 @@
         />
       </div>
     </div>
-    <div class="mb-4 mt-4">
-      <div class="col-sm mb-4 mt-4 mb-sm-0"></div>
-    </div>
+  </div>
+  <div class="mb-4 mt-4">
+    <div class="col-sm mb-4 mt-4 mb-sm-0"></div>
+  </div>
 
-    <div class="d-grid text-center mb-4">
-      <button type="submit" class="buttonBsc">Calculate</button>
-      <!-- <span class="form-text">
+  <div class="d-grid text-center mb-4">
+    <button type="submit" class="buttonBsc">Calculate</button>
+    <!-- <span class="form-text">
       Need help?
       <a class="link" href="./page-help-center.html">
         Visit our Help Center
         <i class="bi-chevron-right small ms-1"></i>
       </a>
     </span> -->
-    </div>
-  </form>
-
+  </div>
+</form>

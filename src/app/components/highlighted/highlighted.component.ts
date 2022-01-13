@@ -26,15 +26,10 @@ export class HighlightedComponent implements OnInit {
     this.symbol = resp.data.symbol
 
     if (this.price.length > 4) {
-      this.price = this.price.slice(0, 6);
+      this.price = this.price.slice(0, 5);
     }
 
     this.priceInit = this.price * 510
-
-    if (this.priceInit.length > 4) {
-      this.priceInit = this.priceInit.slice(0, 5);
-    }
-
   }
 
 }
