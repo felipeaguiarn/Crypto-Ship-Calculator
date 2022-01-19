@@ -91,7 +91,7 @@ a{
   border-radius:10px;
   opacity: 90%;
   margin-bottom: 100px;
-  background-image: url(https://d36eyd5j1kt1m6.cloudfront.net/user-assets/1856713/g8BxRlbEue8ZjA1L/upload.png);
+  background-color: gray;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -106,6 +106,10 @@ a{
   color:#fff;
   font-size:25px;
 }
+.link-area h3{
+  color:#fff;
+}
+
 @media (max-width: 700px)
 {
   .navbar

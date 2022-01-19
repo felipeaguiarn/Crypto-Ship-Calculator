@@ -13,9 +13,12 @@
   border-radius: 6px;
   box-shadow: 0 0 0 5px #fff, 5px 5px 0 5px rgb(0 0 0 / 10%);
   min-width: 200px;
-  max-width: 415px;
+  max-width: 215px;
   min-height: 50px;
-  max-height: 69px;
+}
+
+a{
+  text-decoration: none;
 }
 
 

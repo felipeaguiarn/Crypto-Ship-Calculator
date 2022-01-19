@@ -20,6 +20,12 @@ header.masthead h1,
 header.masthead .h1 {
   font-size: 2rem;
 }
+
+.bg-banner{
+  background-color: #e8e8e8;
+  color: #ff6563;
+  font-size: 16px;
+}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 3rem;

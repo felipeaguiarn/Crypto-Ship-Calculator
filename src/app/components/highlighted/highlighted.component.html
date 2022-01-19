@@ -1,22 +1,24 @@
 <header class="masthead">
   <div class="container position-relative">
     <div class="row d-flex justify-content-center">
-      <div class="col-xl-6 mt-5">
+      <div class="col-xl-5 mt-5">
         <div class="text-left text-white">
           <!-- Page heading-->
-          <h1 class="mt-2">Welcome Captain</h1>
+          <h1 class="mt-2 text-center">Welcome Captain</h1>
           <h5>
             This site was created to help you with information about Crypto
             Ships game. It's not official, visit the original project at:
           </h5>
-          <a
+          <div class="mt-5 d-flex justify-content-around">
+            <span class="cardRed">
+            <a
             class="text-center text-white"
             target="_blank"
             href="https://cryptoships.club/"
             ><h4>Crypto Ships</h4></a
           >
-          <div class="mt-5 d-flex justify-content-center">
-            <span class="cardRed text-white">
+          </span>
+          <span class="cardRed text-white">
               <span>{{ symbol }}</span> - <span>${{ price }} </span>
             </span>
           </div>
@@ -25,12 +27,12 @@
       <div class="col-lg-6 mt-5">
         <app-calculator></app-calculator>
       </div>
-      <div class="card w-50 bg-dark bg-opacity-25 border border-3 border-white">
-        <div class="card-body text-light">
-          <h5 class="card-title text-center">Minimum initial investment</h5>
+      <div class="card w-50 bg-banner bg-opacity-25 border border-3 border-white">
+        <div class="card-body text-center">
+          <h5 class="card-title ">Minimum initial investment</h5>
           <p class="card-text">
             To start the game you need 500 CSHIPS + 10 CSHIPS of fuel, this is a estimate.</p>
-          <p>In the current quotation, this value would be approximately: $ <span class="fw-bold">{{priceInit}}</span> </p>
+          <p>In the current quotation, this value would be approximately: <br> $ <span class="fw-bold">{{priceInit}}</span> </p>
         </div>
       </div>
     </div>
